@@ -2,16 +2,16 @@ name: main
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
       runs-on: ubuntu-latest
       name: Build image job
       steps:
-          - name: Checkout master
+          - name: Checkout main
             uses: actions/checkout@master
           - name: Build and publish image
             uses: ilteoood/docker_buildx@master
