@@ -18,7 +18,7 @@ jobs:
             with:
               publish: true
               imageName: 740162752/caddy-dnspod-docker
-              platform: linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7 # 你准备构建的镜像平台
+              platform: linux/amd64,linux/arm64/v8,linux/arm/v6,linux/arm/v7,linux/ppc64le,linux/s390x # 你准备构建的镜像平台
               tag: latest # 默认latest，可以针对平台，修改tag
               dockerUser: 740162752 # docker hub userid
               dockerPassword: 1357954163cxf # docker hub password
