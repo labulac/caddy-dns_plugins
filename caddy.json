@@ -1,0 +1,11 @@
+{
+        "module": "acme",
+        "challenges": {
+                "dns": {
+                        "provider": {
+                                "name": "dnspod",
+                                "api_token": "{env.DNSPOD_TOKEN}"
+                        }
+                }
+        }
+}
