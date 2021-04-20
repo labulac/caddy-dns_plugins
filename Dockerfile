@@ -1,6 +1,6 @@
 FROM caddy:builder-alpine AS builder
 
-MAINTAINER labulac
+MAINTAINER labulac <labulac@88.com>
 
 RUN xcaddy build \
     --with github.com/caddy-dns/dnspod \
@@ -10,3 +10,5 @@ RUN xcaddy build \
 FROM caddy:alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+HEALTHCHECK --interval=5s --timeout=3s CMD caddy || exit 1
