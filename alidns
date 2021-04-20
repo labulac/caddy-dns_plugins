@@ -1,3 +1,0 @@
-tls {
-  dns lego_deprecated alidns
-}
