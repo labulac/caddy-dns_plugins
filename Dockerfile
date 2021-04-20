@@ -1,6 +1,6 @@
 FROM caddy:builder-alpine AS builder
 
-MAINTAINER labulac <labulac@88.com>
+MAINTAINER labulac  <labulac@88.com>
 
 RUN xcaddy build \
     --with github.com/caddy-dns/dnspod \
