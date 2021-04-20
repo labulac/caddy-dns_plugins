@@ -5,18 +5,9 @@ MAINTAINER labulac <labulac@88.com>
 RUN xcaddy build \
     --with github.com/caddy-dns/dnspod \
     --with github.com/caddy-dns/alidns \
-    --with github.com/caddy-dns/cloudflare \
-    --with github.com/caddy-dns/lego-deprecated
+    --with github.com/caddy-dns/cloudflare
 
 FROM caddy:alpine
-
-WORKDIR /
-
-COPY ./dnspod /etc/caddy/dnspod
-
-COPY ./alidns /etc/caddy/alidns
-
-COPY ./cloudflare /etc/caddy/cloudflare
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
