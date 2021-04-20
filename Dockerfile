@@ -5,7 +5,8 @@ MAINTAINER labulac <labulac@88.com>
 RUN xcaddy build \
     --with github.com/caddy-dns/dnspod \
     --with github.com/caddy-dns/alidns \
-    --with github.com/caddy-dns/cloudflare
+    --with github.com/caddy-dns/cloudflare \
+    --with github.com/caddy-dns/lego-deprecated
 
 FROM caddy:alpine
 
