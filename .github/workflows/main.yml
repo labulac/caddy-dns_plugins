@@ -25,4 +25,4 @@ jobs:
               platform: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6 # 你准备构建的镜像平台
               tag: latest # 默认latest，可以针对平台，修改tag
               dockerUser: 740162752 # docker hub userid
-              dockerPassword: 1357954163cxf # docker hub password
+              dockerPassword:  # docker hub password
