@@ -11,5 +11,3 @@ RUN xcaddy build \
 FROM caddy:alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
-
-HEALTHCHECK --interval=5s --timeout=3s CMD caddy version || exit 1
