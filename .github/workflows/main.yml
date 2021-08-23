@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
   # 定时触发编译(每天早5点)
-  schedule:
-     - cron: '0 5 * * *'
+  #schedule:
+     #- cron: '0 5 * * *'
   # 点☆Star触发开始编译
-  watch:  
-     types: [started]
+  #watch:  
+     #types: [started]
   
 jobs:
   build:
